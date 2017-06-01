@@ -6,4 +6,3 @@ response = HTTParty.get("https://mozgva.com/api/v1/games/schedule?id=1",
 
 json = JSON.parse(response.body)
 
-puts json

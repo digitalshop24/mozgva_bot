@@ -18,10 +18,15 @@ Telegram::Bot::Client.run(TOKEN) do |bot|
 				chat_id: message.chat.id,
 				text: "Я могу записать тебя на игру. Только мне надо узнать из какого ты города."
 				)	
+		when '/help'
+			bot.api.send_message(
+				chat_id: message.chat.id,
+				text: "тут расписание."
+				)		
 		else
 			bot.api.send_message(
 				chat_id: message.chat.id,
-				text: "#{message.from.first_name} я пока мало чего умею. Только /start и /help"
+				text: "#{message.from.first_name} я пока мало чего умею. Только /start и /help /schedule"
 				)
 		end
 	end
