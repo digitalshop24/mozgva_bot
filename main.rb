@@ -20,7 +20,7 @@ Telegram::Bot::Client.run(TOKEN) do |bot|
 		else
 			bot.api.send_message(
 				chat_id: message.chat.id,
-				text: "#{message.from.first_name} не понимаю о чем ты"
+				text: "#{message.from.first_name} я пока мало чего умею. Только /start и /help"
 				)
 		end
 	end
