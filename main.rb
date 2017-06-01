@@ -1,6 +1,7 @@
 # coding: UTF-8
 
 require 'telegram/bot'
+require 'schedule.rb'
 
 TOKEN = '390226364:AAG_hpGzIrG7VIvWAOMJjYmsZMUNgsbUyxQ'
 
