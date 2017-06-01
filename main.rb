@@ -1,7 +1,6 @@
 # coding: UTF-8
 
 require 'telegram/bot'
-require 'schedule.rb'
 
 TOKEN = '390226364:AAG_hpGzIrG7VIvWAOMJjYmsZMUNgsbUyxQ'
 
@@ -18,10 +17,10 @@ Telegram::Bot::Client.run(TOKEN) do |bot|
 				chat_id: message.chat.id,
 				text: "Я могу записать тебя на игру. Только мне надо узнать из какого ты города."
 				)	
-		when '/help'
+		when '/schedule'
 			bot.api.send_message(
 				chat_id: message.chat.id,
-				text: "тут расписание."
+				text: "тут расписание"
 				)		
 		else
 			bot.api.send_message(
